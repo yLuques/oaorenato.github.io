@@ -1,0 +1,375 @@
+/* ================================
+   CONFIGURAÇÕES GERAIS
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eef1f6;
+    color: #222;
+    line-height: 1.5;
+}
+
+.curriculo {
+    width: min(1100px, 94%);
+    margin: 30px auto;
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ================================
+   CABEÇALHO
+================================ */
+
+.cabecalho {
+    min-height: 230px;
+    padding: 30px 45px;
+
+    display: grid;
+    grid-template-columns: 1fr 180px 1fr;
+    align-items: center;
+    gap: 30px;
+
+    background: linear-gradient(
+        135deg,
+        #1748bd,
+        #245bd5
+    );
+
+    color: white;
+}
+
+
+/* CONTATO */
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contato p {
+    font-size: 15px;
+}
+
+.contato strong {
+    font-size: 13px;
+    text-transform: uppercase;
+    opacity: 0.75;
+    letter-spacing: 0.5px;
+}
+
+
+/* FOTO */
+
+.foto {
+    display: flex;
+    justify-content: center;
+}
+
+.foto img {
+    width: 150px;
+    height: 150px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 5px solid white;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+/* NOME */
+
+.nome {
+    text-align: right;
+}
+
+.nome h1 {
+    font-size: 36px;
+    line-height: 1.1;
+}
+
+.nome h2 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.nome p {
+    margin-top: 12px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    opacity: 0.9;
+}
+
+
+/* ================================
+   CONTEÚDO
+================================ */
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+
+/* ================================
+   COLUNAS
+================================ */
+
+.coluna-esquerda {
+    padding: 35px;
+
+    background: #f5f7fb;
+
+    border-right: 1px solid #dfe3eb;
+}
+
+.coluna-direita {
+    padding: 35px 40px;
+}
+
+
+/* ================================
+   SEÇÕES
+================================ */
+
+section {
+    margin-bottom: 28px;
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+section h2 {
+    margin-bottom: 14px;
+
+    font-size: 20px;
+
+    color: #1748bd;
+
+    border-bottom: 2px solid #1748bd;
+
+    padding-bottom: 7px;
+}
+
+section p {
+    font-size: 14px;
+    color: #444;
+}
+
+
+/* ================================
+   LISTAS
+================================ */
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+li::marker {
+    color: #1748bd;
+}
+
+
+/* ================================
+   FORMAÇÃO
+================================ */
+
+.formacao-item {
+    margin-bottom: 20px;
+}
+
+.formacao-item h3 {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.formacao-item p {
+    font-size: 14px;
+}
+
+.formacao-item span {
+    display: block;
+    margin-top: 3px;
+
+    font-size: 13px;
+    color: #777;
+}
+
+
+/* ================================
+   TAGS
+================================ */
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tags span {
+    padding: 6px 10px;
+
+    background: #e6edff;
+    color: #1748bd;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* ================================
+   CONHECIMENTOS
+================================ */
+
+.conhecimentos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.conhecimentos div {
+    padding: 12px;
+
+    border-left: 3px solid #1748bd;
+
+    background: #f7f8fa;
+}
+
+.conhecimentos h3 {
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.conhecimentos p {
+    font-size: 13px;
+}
+
+
+/* ================================
+   PROJETOS
+================================ */
+
+.projeto {
+    padding: 15px;
+
+    background: #f7f8fa;
+
+    border-left: 4px solid #1748bd;
+
+    border-radius: 4px;
+}
+
+.projeto h3 {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.projeto p {
+    margin-bottom: 8px;
+}
+
+
+/* ================================
+   FERRAMENTAS
+================================ */
+
+.ferramentas {
+    list-style: none;
+    padding-left: 0;
+}
+
+.ferramentas li {
+    padding: 7px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* ================================
+   RESPONSIVIDADE
+================================ */
+
+@media (max-width: 800px) {
+
+    .cabecalho {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .contato {
+        align-items: center;
+        order: 2;
+    }
+
+    .foto {
+        order: 1;
+    }
+
+    .nome {
+        text-align: center;
+        order: 3;
+    }
+
+    .conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .coluna-esquerda {
+        border-right: none;
+        border-bottom: 1px solid #dfe3eb;
+    }
+
+    .conhecimentos {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ================================
+   IMPRESSÃO / PDF
+================================ */
+
+@media print {
+
+    body {
+        background: white;
+    }
+
+    .curriculo {
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .cabecalho {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .tags span {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
