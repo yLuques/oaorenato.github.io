@@ -1,0 +1,58 @@
+.container-md {
+    margin-top: 10px;
+    background: linear-gradient(to bottom, #2053d5, #1a4ac4, #123fb1);
+    align-items: center;
+    display: block;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    gap: 10px;
+}
+.container-sm {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.corpo-body {
+    display: block;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+.Corpo-left, .Corpo-center, .Corpo-right {
+    padding: 10px;
+}
+.Corpo-left {
+    text-align: left;
+    color:white;
+}
+.Corpo-center {
+    text-align: center;
+}
+.Corpo-right {
+ text-align: right;
+     color:white;
+   
+}
+.h1 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-right, .card-left {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+}
+.card-left li{
+    padding-top: 16.7px;
+    
+}
